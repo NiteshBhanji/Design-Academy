@@ -1,0 +1,440 @@
+@import "default";
+
+.header-section {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    .top-bar {
+        font-family: $NeueHD-RMNV;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 6px 0;
+        margin: 0 0 23px 0;
+        text-align: center;
+        backdrop-filter: blur(160px);
+        background: rgba(255, 255, 255, 0.09);
+
+        .colored-text {
+            color: #6C0CAD;
+            font-weight: 600;
+        }
+    }
+
+    .inner-container {
+        //padding: 42px 0;
+        padding: 0;
+
+        .flex-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header-logo-box {
+                width: 161px;
+
+                h5 {
+                    font-family: $NeueHD-RMNV;
+                    font-size: 24px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    color: #000000;
+
+                    span {
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: $primaryColor;
+                    }
+
+                    .thin-letter {
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: 100;
+                        color: #272727;
+                    }
+                }
+            }
+
+            .header-nav-box {
+                width: 400px;
+                max-width: 100%;
+                padding: 20px 30px;
+                background-color: #ffffff;
+                border-radius: 100px;
+                box-shadow: 4px 4px 44px rgba(0, 0, 0, 0.1);
+
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0;
+
+                    li {
+                        a {
+                            font-size: 16px;
+                            line-height: 19px;
+                            font-weight: 600;
+                            color: #000000;
+                            opacity: 0.3;
+                            transition: color 0.3s ease-in-out;
+                            transition: opacity 0.3s ease-in-out;
+
+                        }
+                    }
+
+                    li.active {
+                        a {
+                            color: $primaryColor;
+                            opacity: 1;
+                        }
+                    }
+
+                    li:hover {
+                        a {
+                            color: $primaryColor;
+                            opacity: 1;
+
+                        }
+                    }
+
+                    .cut-through-text {
+                        span {
+                            color: #000000;
+                            opacity: 0.3;
+                            font-size: 16px;
+                            line-height: 19px;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            position: absolute;
+                            width: 42px;
+                            margin: 4px 0 0 -38px;
+                            opacity: 1;
+                            transform: rotate(26.4deg);
+                        }
+                    }
+
+                    .cut-through-text:hover {
+                        span {
+                            color: #000000;
+                            opacity: 0.3;
+                        }
+                    }
+
+                    .cut-through-text::after {
+                        content: "Not in MVP";
+                        display: block;
+                        position: absolute;
+                        font-family: inherit;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: right;
+                        margin: 0 0 0 -6px;
+                        color: $primaryColor;
+                        opacity: 1;
+                        transform: rotate(-6.52deg);
+                    }
+                }
+            }
+
+            .header-cta-box {
+                width: 158px;
+
+                img {
+                    height: 28px;
+                    vertical-align: middle;
+                    margin: -6px 0 0 6px;
+                }
+            }
+        }
+    }
+}
+
+
+/*Header for Tab CSS starts here*/
+@media only screen and (max-width:1200px) {
+
+    .header-section {
+
+        .top-bar {
+            font-family: $NeueHD-RMNV;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 500;
+            padding: 6px 0;
+            margin: 0 0 23px 0;
+            text-align: center;
+            backdrop-filter: blur(160px);
+            background: rgba(255, 255, 255, 0.09);
+
+            .colored-text {
+                color: #6C0CAD;
+                font-weight: 600;
+            }
+        }
+
+        .inner-container {
+            //padding: 40px 0;
+
+            .flex-box {
+
+                .header-logo-box {
+                    width: 108px;
+
+                    h5 {
+                        font-family: $NeueHD-MDV;
+                        font-size: 16px;
+                        line-height: 19px;
+
+                        span {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+
+                        .thin-letter {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+
+                .header-nav-box {
+                    width: 309px;
+                    padding: 11px 25px;
+
+                    ul {
+
+                        li {
+                            a {
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                        }
+
+                        .cut-through-text {
+                            img {
+                                position: absolute;
+                                width: 28px;
+                                margin: 4px 0 0 -32px;
+                            }
+                        }
+
+                        .cut-through-text::after {
+                            font-size: 10px;
+                            line-height: 12px;
+                            margin: -2px 0 0 0;
+                        }
+                    }
+                }
+
+                .header-cta-box {
+                    width: 82px;
+
+                    a {
+                        font-family: $NeueHD-LTV;
+                        font-size: 12px;
+                        line-height: 14px;
+                        padding: 11px 15px 11px 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+/*Header for Mobile CSS starts here*/
+@media only screen and (max-width:768px) {
+
+    .header-section {
+
+        .top-bar {
+            font-family: $NeueHD-RMNV;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 500;
+            padding: 6px 24px;
+            margin: 0 0 23px 0;
+            text-align: center;
+            backdrop-filter: blur(160px);
+            background: rgba(255, 255, 255, 0.09);
+
+            .colored-text {
+                color: #6C0CAD;
+                font-weight: 600;
+            }
+        }
+
+        .inner-container {
+            //padding: 40px 0;
+
+            .flex-box {
+
+                .header-logo-box {
+                    width: 130px;
+
+                    h5 {
+                        font-family: $NeueHD-MDV;
+                        font-size: 19px;
+                        line-height: 25px;
+                        font-weight: 100;
+
+                        span {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+
+                        .thin-letter {
+                            font-size: 19px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+
+                .header-nav-box {
+                    width: 309px;
+                    padding: 11px 25px;
+
+                    ul {
+
+                        li {
+                            a {
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                        }
+
+                        .cut-through-text {
+                            img {
+                                position: absolute;
+                                width: 28px;
+                                margin: 4px 0 0 -32px;
+                            }
+                        }
+
+                        .cut-through-text::after {
+                            font-size: 10px;
+                            line-height: 12px;
+                            margin: -2px 0 0 0;
+                        }
+                    }
+                }
+
+                .header-cta-box {
+                    width: 82px;
+                    margin: 0 0 0 20px;
+
+                    a {
+                        font-family: $NeueHD-LTV;
+                        font-size: 12px;
+                        line-height: 14px;
+                        padding: 11px 15px 11px 15px;
+                    }
+                }
+
+                .menuBar-Container {
+                    margin: 0 0 0 20px;
+
+                    .bars {
+                        width: 28px;
+                        height: 2px;
+                        background: #000000;
+                        margin: 6px 0;
+                        transition: 0.4s;
+                        border-radius: 50px;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+    transform: rotate(-45deg) translate(-5px, 2px);
+}
+
+.change .bar2 {
+    display: none;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-4px, 0px);
+    transform: rotate(45deg) translate(-4px, 0px);
+}
+
+.hamMenu-Box {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    z-index: 99;
+
+
+    .inner-hamMenu-Box {
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        opacity: 0;
+
+        .hamMenu {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            ul {
+                text-align: center;
+                margin: 0;
+                list-style-type: none;
+
+                li {
+                    border-bottom: none;
+                    letter-spacing: -3px;
+                    margin: 20px 0 0 0;
+
+                    a {
+                        color: #6C0CAD;
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+                }
+
+                li:before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        100% {
+            opacity: 1;
+        }
+
+        0% {
+            opacity: 0;
+        }
+    }
+}

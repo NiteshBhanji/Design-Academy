@@ -1,0 +1,408 @@
+@import "default";
+
+.single-post {
+    .blob {
+        display: none;
+    }
+}
+
+
+
+.hero-section {
+    .inner-container {
+        padding: 180px 0 70px 0;
+
+        .tilted-heading-text {
+            width: 458px;
+            margin: 0 0 0 0;
+        }
+
+        .main-title {
+            width: 426px;
+            max-width: 100%;
+            font-size: 51px;
+            font-weight: 300;
+            line-height: 66px;
+            text-align: center;
+            margin: 0 auto 40px auto;
+        }
+
+        .meta-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 35px 0;
+
+
+            .category-wrapper {
+                .hollow-cta {
+                    font-family: $NeueHD-RMNV;
+                    font-size: 18px;
+                    font-weight: 400;
+                    padding: 6px 15px;
+                }
+            }
+
+            .author-wrapper {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .author-img {
+                    width: 48px;
+                    height: auto;
+                    border-radius: 50%;
+                    border: 2px solid #cfcccc;
+                }
+
+                .author-name {
+                    font-family: "NeueHaasDisplay-RMN";
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 500;
+                    margin: 0 0 0 10px;
+                }
+
+                .dot-separator {
+                    width: 6px;
+                    height: 6px;
+                    background-color: #c7c6c6;
+                    border-radius: 50%;
+                    margin: 0 10px;
+                }
+
+                .post-date {
+                    font-family: "NeueHaasDisplay-RMN";
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 500;
+                    color: #999595;
+                }
+
+
+            }
+        }
+
+        .featured-img {
+            display: block;
+            width: 100%;
+            margin: 0 0 35px 0;
+            border-radius: 14px;
+        }
+
+        .para {
+            width: 100%;
+            margin: 0 0 52px 0;
+            text-align: left;
+
+            p {
+                margin: 0 0 10px 0;
+
+                a {
+                    text-decoration: underline;
+                    color: #6C0CAD;
+                }
+            }
+
+            ol {
+                margin: 0 0 12px 34px;
+                color: #2F2D30;
+            }
+
+            ul {
+                margin: 0 0 12px 34px;
+                color: #2F2D30;
+            }
+
+            img {
+                width: 70%;
+                display: block;
+                margin: 20px auto;
+            }
+        }
+
+        .sub-title {
+            margin: 0 0 16px 0;
+        }
+
+        // .main-title::after {
+        //     content: 'Program';
+        //     display: block;
+        //     width: 100%;
+        //     max-width: 100%;
+        //     font-family: $NeueHD-MDV;
+        //     font-weight: 600;
+        //     font-size: 18px;
+        //     line-height: 21px;
+        //     text-align: right;
+        //     margin: 0 0 0 -20px;
+        // }
+
+    }
+}
+
+
+@media only screen and (max-width:1200px) {
+
+    .single-post {
+        .blob {
+            display: none;
+        }
+    }
+
+    .hero-section {
+        .inner-container {
+            padding: 180px 0 0 0;
+
+            .tilted-heading-text {
+                width: 458px;
+                margin: 0 0 0 0;
+            }
+
+            .main-title {
+                width: 426px;
+                max-width: 100%;
+                font-size: 51px;
+                font-weight: 300;
+                line-height: 66px;
+                text-align: center;
+                margin: 0 auto 40px auto;
+            }
+
+            .meta-content {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 26px 0;
+
+
+                .category-wrapper {
+                    .hollow-cta {
+                        font-family: $NeueHD-RMNV;
+                        font-size: 18px;
+                        font-weight: 400;
+                        padding: 6px 15px;
+                    }
+                }
+
+                .author-wrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    .author-img {
+                        width: 70px;
+                        height: auto;
+                        border-radius: 50%;
+                    }
+
+                    .author-name {
+                        font-family: "NeueHaasDisplay-RMN";
+                        font-size: 18px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        margin: 0 0 0 10px;
+                    }
+
+                    .dot-separator {
+                        width: 6px;
+                        height: 6px;
+                        background-color: #c7c6c6;
+                        border-radius: 50%;
+                        margin: 0 10px;
+                    }
+
+                    .post-date {
+                        font-family: "NeueHaasDisplay-RMN";
+                        font-size: 18px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        color: #999595;
+                    }
+
+
+                }
+            }
+
+            .featured-img {
+                display: block;
+                width: 100%;
+                margin: 0 0 35px 0;
+                border-radius: 14px;
+            }
+
+            .para {
+                width: 100%;
+                margin: 0 0 42px 0;
+                text-align: left;
+
+                p {
+                    margin: 0 0 10px 0;
+                }
+
+                img {
+                    width: 80%;
+                }
+
+            }
+
+            .sub-title {
+                margin: 0 0 14px 0;
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+
+    .single-post {
+        .blob {
+            display: none;
+        }
+    }
+
+    .hero-section {
+        .inner-container {
+            padding: 180px 0 0 0;
+
+            .tilted-heading-text {
+                width: 458px;
+                margin: 0 0 0 0;
+            }
+
+            .main-title {
+                width: max-content;
+                max-width: 100%;
+                font-size: 38px;
+                font-weight: 300;
+                line-height: 46px;
+                text-align: center;
+                margin: 0 auto 22px auto;
+            }
+
+            .meta-content {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column-reverse;
+                margin: 0 0 22px 0;
+
+
+                .category-wrapper {
+
+                    .hollow-cta {
+                        font-family: $NeueHD-RMNV;
+                        font-size: 12px;
+                        font-weight: 400;
+                        padding: 6px 15px;
+                    }
+                }
+
+                .author-wrapper {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 0 24px 0;
+                    text-align: center;
+
+                    .author-img {
+                        width: 46px;
+                        height: auto;
+                        border-radius: 50%;
+                    }
+
+                    .author-name {
+                        font-family: "NeueHaasDisplay-RMN";
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: 500;
+                        margin: 0;
+                    }
+
+                    .dot-separator {
+                        width: 6px;
+                        height: 6px;
+                        background-color: #c7c6c6;
+                        border-radius: 50%;
+                        margin: 0 10px;
+                    }
+
+                    .post-date {
+                        font-family: "NeueHaasDisplay-RMN";
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: 500;
+                        color: #999595;
+                    }
+
+
+                }
+            }
+
+            .featured-img {
+                display: block;
+                width: 100%;
+                margin: 0 0 24px 0;
+                border-radius: 14px;
+            }
+
+            .para {
+                width: 100%;
+                margin: 0 0 32px 0;
+                text-align: left;
+
+                p {
+                    margin: 0 0 10px 0;
+                }
+
+                ol {
+                    margin: 0 0 12px 24px;
+
+                    li {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                }
+
+                ul {
+                    margin: 0 0 12px 24px;
+
+                    li {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .sub-title {
+                margin: 0 0 10px 0;
+            }
+
+            // .main-title::after {
+            //     content: 'Program';
+            //     display: block;
+            //     width: 100%;
+            //     max-width: 100%;
+            //     font-family: $NeueHD-MDV;
+            //     font-weight: 600;
+            //     font-size: 18px;
+            //     line-height: 21px;
+            //     text-align: right;
+            //     margin: 0 0 0 -20px;
+            // }
+
+        }
+    }
+}

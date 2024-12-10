@@ -1,0 +1,1124 @@
+@import "default";
+
+
+
+.hero-section {
+    .inner-container {
+        padding: 150px 0 0 0;
+
+        .tilted-heading-text {
+            width: 458px;
+            margin: 0 0 0 50px;
+        }
+
+        .mclass-hero-img {
+            display: block;
+            width: 298px;
+            margin: 12px auto 0 auto;
+        }
+
+        .main-title {
+            width: max-content;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .main-title::after {
+            content: 'Program';
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            font-family: $NeueHD-MDV;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: right;
+            margin: 0 0 0 -20px;
+        }
+
+        .main-desc-para {
+            width: 630px;
+            margin: 0 auto 0 auto;
+            text-align: center;
+
+            p {
+                margin: 35px 0 0 0;
+            }
+        }
+
+        .main-desc-para-two {
+            width: 780px;
+            max-width: 100%;
+            margin: 0 auto;
+            border: 1px solid #DCDCDC;
+            border-radius: 6px;
+            margin: 32px auto 0 auto;
+            padding: 24px 0;
+            backdrop-filter: blur(70px);
+            background: rgb(255 255 255 / 62%);
+            //box-shadow: 0px;
+            transition: box-shadow 0.4s ease-in-out;
+
+
+            p {
+                font-weight: 600;
+                text-align: center;
+            }
+
+            ul {
+                margin: 3px 0 0 34px;
+
+                li {
+                    margin: 12px 0 0 34px;
+                }
+            }
+
+        }
+
+
+
+
+        .inmclass-container {
+            margin: 60px 0 0 0;
+
+            h2 {
+                font-family: $NeueHD-LTV;
+                font-weight: 400;
+                text-align: center;
+
+                span.vector-underline {
+                    display: inline-block;
+                    width: min-content;
+                    max-width: 100%;
+                }
+
+                span.vector-underline::after {
+                    content: '';
+                    display: block;
+                    width: 160%;
+                    height: 15px;
+                    background: url('../assets/images/vectors/black-underline-vector-001.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin: 0 0 0 -35%;
+                }
+            }
+
+            .row {
+                width: 814px;
+                display: flex;
+                align-items: center;
+                margin: 100px auto 0 auto;
+
+                .img-box {
+                    width: 50%;
+
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+
+                .text-box {
+                    width: 50%;
+
+                    h3 {
+                        margin: 15px 0 0 0;
+                    }
+
+                    p {
+                        margin: 10px 0 0 0;
+                    }
+                }
+            }
+
+            .row-one {
+                .img-box {
+
+                    img {
+                        width: 101px;
+
+                    }
+                }
+            }
+
+            .row-two {
+                .img-box {
+
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+
+            .row-three {
+                .img-box {
+
+                    img {
+                        width: 230px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.why-section {
+    .inner-container {
+
+        .tilted-heading-text {
+            width: 254px;
+            margin: 0 0 0 29px;
+        }
+
+        h2 {
+            width: 846px;
+            margin: 0 auto;
+            text-align: center;
+
+            span.vector-underline {
+                display: inline-block;
+                width: min-content;
+                max-width: 100%;
+            }
+
+            span.vector-underline::after {
+                content: '';
+                display: block;
+                width: 65%;
+                height: 20px;
+                background: url('../assets/images/vectors/black-underline-vector-001.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: 0 0 0 16%;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0 0 0;
+        }
+
+        .reasons-container {
+            width: 100%;
+            margin: 60px 0 0 0;
+
+
+            .inner-reasons-container {
+                width: 100%;
+                max-width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .reason-box {
+                    text-align: center;
+
+                    img {
+                        height: 153px;
+                    }
+
+                    h3 {
+                        margin: 20px 0 0 0;
+                    }
+
+                    p {
+                        margin: 10px 0 0 0;
+                    }
+                }
+
+                .reason-box-one {
+                    width: 245px;
+                }
+
+                .reason-box-two {
+                    width: 245px;
+                    margin: 0 38px 0 59px;
+
+                    img {
+                        height: 160px;
+                    }
+                }
+
+                .reason-box-three {
+                    width: 277px;
+                }
+
+            }
+        }
+
+    }
+}
+
+.fees-section {
+    .inner-container {
+
+        h2 {
+            width: 286px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .main-desc-para {
+            width: 436px;
+            text-align: center;
+            margin: 10px auto 0 auto;
+        }
+
+        .fees-container {
+            width: 359px;
+            max-width: 100%;
+            margin: 60px auto 0 auto;
+            padding: 0 20px;
+            text-align: center;
+            border-radius: 5px;
+
+
+            border: 1px solid #6C0CAD4D;
+            backdrop-filter: blur(70px);
+            background: rgb(255 255 255 / 62%);
+            transition: box-shadow 0.4s ease-in-out;
+            //box-shadow: 0px;
+
+            .fee-icon {
+                width: 70px;
+                margin: 59px auto 0 auto;
+            }
+
+            .month-fee-title {
+                font-family: $NeueHD-RMNV;
+                font-weight: 300;
+                margin: 25px 0 0 0;
+            }
+
+            .partition-line {
+                width: 158px;
+                margin: 30px 0 0 0;
+            }
+
+            .flex-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .text {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                .amount {
+                    font-size: 40px;
+                    line-height: 48px;
+                    font-weight: 500;
+                }
+            }
+
+            .boxed-row {
+                padding: 10px 15px;
+                border: 1px solid #6C0CAD4D;
+                border-radius: 5px;
+
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-align: left;
+                }
+            }
+
+            .row-one {
+                margin: 30px 0 0 0;
+            }
+
+            .row-two {
+                margin: 15px auto 0 auto;
+            }
+
+            .row-three {
+                margin: 25px 0 0 0;
+            }
+
+            .row-four {
+                margin: 15px auto 34px auto;
+            }
+
+        }
+
+        .fees-container:hover {
+            //box-shadow: 4px 4px 20px rgba(230, 193, 255, 0.25), -4px -4px 20px rgba(230, 193, 255, 0.3);
+            //box-shadow: -4px -4px 20px rgba(139, 137, 137, 0.25), 4px 4px 20px rgba(139, 137, 137, 0.25);
+        }
+
+        .fees-container:before {
+            content: '';
+            background: linear-gradient(45deg, #6C0CAD, #9742D0, #B974E7, #6C0CAD, #9742D0, #B974E7);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 5px;
+        }
+
+        .fees-container:active {
+            color: #000
+        }
+
+        .fees-container:active:after {
+            //background: rgb(255 255 255 / 28%);
+            background: #FFFFFF;
+        }
+
+        .fees-container:hover:before {
+            opacity: 0.5;
+        }
+
+        .fees-container:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #FFF;
+            left: 0;
+            top: 0;
+            border-radius: 5px;
+        }
+
+        @keyframes glowing {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .scnd-desc-para {
+            width: 384px;
+            font-weight: 500;
+            text-align: center;
+            margin: 36px auto 0 auto;
+        }
+
+        .cta-box {
+            width: 100%;
+            text-align: center;
+            margin: 30px 0 0 0;
+        }
+    }
+}
+
+.faq-section {
+    .inner-container {
+        padding: 150px 0 150px 0;
+
+        .section-partition-horizontal {
+            display: block;
+            width: 159px;
+            margin: 145px auto 0 auto;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+/*Tablet CSS starts here*/
+@media only screen and (max-width:1200px) {
+
+    .hero-section {
+        .inner-container {
+
+            .tilted-heading-text {
+                width: 225px;
+                margin: 0 0 0 58px;
+            }
+
+            .mclass-hero-img {
+                display: block;
+                width: 228px;
+                margin: 15px auto 0 auto;
+            }
+
+            .main-title {
+                margin: 0 auto;
+            }
+
+            .main-title::after {
+                font-size: 12px;
+                line-height: 18px;
+                margin: -6px 0 0 -20px;
+            }
+
+            .main-desc-para {
+                width: 434px;
+
+                p {
+                    margin: 25px 0 0 0;
+                }
+            }
+
+            .main-desc-para-two {
+                width: 550px;
+                border-radius: 6px;
+                margin: 32px auto 0 auto;
+                padding: 24px 0;
+
+                p {
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                ul {
+                    margin: 15px 0 0 16px;
+                }
+
+            }
+
+            .inmclass-container {
+                margin: 75px 0 0 0;
+
+                h2 {
+                    font-family: $NeueHD-LTV;
+                    font-weight: 400;
+                    text-align: center;
+
+                    span.vector-underline {}
+
+                    span.vector-underline::after {
+                        width: 160%;
+                        height: 15px;
+                        margin: 0 0 0 -35%;
+                    }
+                }
+
+                .row {
+                    width: 540px;
+                    margin: 80px auto 0 auto;
+
+                    .img-box {
+
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .text-box {
+                        h3 {
+                            margin: 15px 0 0 0;
+                        }
+
+                        p {
+                            margin: 15px 0 0 0;
+                        }
+                    }
+                }
+
+                .row-one {
+                    .img-box {
+
+                        img {
+                            width: 77px;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .text-box {
+                        margin: 0 0 0 83px;
+                    }
+                }
+
+                .row-two {
+                    .img-box {
+
+
+                        img {
+                            width: 199px;
+                            margin: 0 0 0 43px;
+                        }
+                    }
+
+                    .text-box {
+                        width: 320px;
+
+                        p {
+                            width: 270px;
+                        }
+                    }
+                }
+
+                .row-three {
+                    .img-box {
+
+                        img {
+                            width: 181px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .why-section {
+        .inner-container {
+
+            .tilted-heading-text {
+                width: 254px;
+                margin: 0 0 0 29px;
+            }
+
+            h2 {
+                width: 538px;
+
+                span.vector-underline {}
+
+                span.vector-underline::after {
+                    width: 65%;
+                    height: 20px;
+                    margin: 0 0 0 16%;
+                }
+            }
+
+            p {
+                margin: 10px 0 0 0;
+            }
+
+            .reasons-container {
+                margin: 70px 0 0 0;
+
+
+                .inner-reasons-container {
+
+                    .reason-box {
+
+                        img {
+                            width: auto;
+                        }
+
+                        h3 {
+                            margin: 20px 0 0 0;
+                        }
+
+                        p {
+                            margin: 20px 0 0 0;
+                        }
+                    }
+
+                    .reason-box-one {
+                        width: 179px;
+                    }
+
+                    .reason-box-two {
+                        width: 186px;
+                        margin: 0 45px 0 36px;
+                    }
+
+                    .reason-box-three {
+                        width: 159px;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .fees-section {
+        .inner-container {
+
+            h2 {
+                width: 217px;
+            }
+
+            .main-desc-para {
+                width: 300px;
+                margin: 20px auto 0 auto;
+            }
+
+            .fees-container {
+                width: 295px;
+                margin: 30px auto 0 auto;
+
+                .fee-icon {
+                    width: 50px;
+                    margin: 30px auto 0 auto;
+                }
+
+                .month-fee-title {
+                    margin: 20px 0 0 0;
+                }
+
+                .partition-line {
+                    width: 103px;
+                    margin: 20px 0 0 0;
+                }
+
+                .flex-row {
+
+                    .text {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+
+                    .amount {
+                        font-size: 30px;
+                        line-height: 36px;
+                    }
+                }
+
+                .boxed-row {
+                    padding: 10px 15px;
+
+                    p {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+
+                .row-one {
+                    margin: 20px 0 0 0;
+                }
+
+                .row-two {
+                    margin: 30px 0 0 0;
+                }
+
+                .row-three {
+                    margin: 30px 0 0 0;
+                }
+
+                .row-four {
+                    margin: 30px 0 30px 0;
+                }
+
+            }
+
+            .fees-container:before {
+                display: none;
+            }
+
+            .fees-container:after {
+                display: none;
+            }
+
+            .scnd-desc-para {
+                width: 220px;
+                margin: 35px auto 0 auto;
+            }
+
+            .cta-box {
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+
+    .faq-section {
+        .inner-container {
+            padding: 75px 0 75px 0;
+
+            .section-partition-horizontal {
+                width: 114px;
+                margin: 0 auto 75px auto;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+
+
+
+/*Mobile CSS starts here*/
+@media only screen and (max-width:768px) {
+
+    .hero-section {
+        .inner-container {
+            padding: 130px 0 0 0;
+
+            .tilted-heading-text {
+                width: 205px;
+                margin: 0 0 12px 0
+            }
+
+            .main-title {
+                margin: 0 auto;
+                font-size: 38px;
+                line-height: 46px;
+            }
+
+            .mclass-hero-img {
+                display: block;
+                width: 240px;
+                margin: 24px auto 24px auto;
+            }
+
+            .main-title::after {
+                display: none;
+                font-size: 14px;
+                line-height: 20px;
+                margin: -10px 0 0 -16px;
+            }
+
+            .main-desc-para {
+                width: 100%;
+
+                p {
+                    margin: 15px 0 0 0;
+                }
+            }
+
+            .main-desc-para-two {
+                width: 232px;
+                max-width: 100%;
+                margin: 32px auto 0 auto;
+                padding: 24px 20px;
+
+
+                p {
+                    // font-size: 14px;
+                    // line-height: 20px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                ul {
+                    margin: 12px 0 0 18px;
+                    text-align: left;
+
+                    li {
+                        margin: 10px 0 0 9px;
+                    }
+                }
+
+            }
+
+            .inmclass-container {
+                margin: 75px 0 0 0;
+
+                h2 {
+                    font-family: $NeueHD-LTV;
+                    font-weight: 400;
+                    text-align: center;
+                    font-size: 42px;
+                    line-height: 52px;
+
+                    span.vector-underline {}
+
+                    span.vector-underline::after {
+                        display: none;
+                        width: 160%;
+                        height: 15px;
+                        margin: 0 0 0 -35%;
+                    }
+                }
+
+                .row {
+                    width: 100%;
+                    flex-direction: column;
+                    margin: 0;
+                    text-align: center;
+
+                    .text-box {
+                        width: 100%;
+
+                        h6 {
+                            margin: 20px 0 0 0;
+                            display: none;
+                        }
+
+                        h3 {
+                            margin: 22px 0 0 0;
+                            font-size: 28px;
+                            line-height: 38px;
+                        }
+
+                        p {
+                            margin: 10px 0 0 0;
+                        }
+                    }
+
+                    .img-box {
+                        width: 100%;
+                    }
+                }
+
+                .row-one {
+                    margin: 72px 0 0 0;
+
+                    .img-box {
+
+                        img {
+                            width: 90px;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .text-box {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+
+                .row-two {
+                    flex-direction: column-reverse;
+                    margin: 72px 0 0 0;
+
+                    .img-box {
+
+                        img {
+                            width: 250px;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .text-box {
+                        width: 100%;
+                        margin: 0;
+
+                        h3 {
+                            width: 261px;
+                        }
+
+                        p {
+                            width: unset;
+                        }
+                    }
+                }
+
+                .row-three {
+                    margin: 72px 0 0 0;
+
+                    .img-box {
+
+                        img {
+                            width: 220px;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .text-box {
+                        width: 100%;
+                        margin: 0;
+
+                        p {
+                            width: 233px;
+                            margin: 10px auto 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .why-section {
+        .inner-container {
+
+            .tilted-heading-text {
+                width: 205px;
+                margin: 0;
+            }
+
+            h2 {
+                width: 280px;
+                font-size: 38px;
+                line-height: 46px;
+
+                span.vector-underline {}
+
+                span.vector-underline::after {
+                    display: none;
+                    width: 65%;
+                    height: 20px;
+                    margin: 0 0 0 16%;
+                }
+            }
+
+            p {
+                margin: 12px 0 0 0;
+            }
+
+            .reasons-container {
+                margin: 0;
+
+
+                .inner-reasons-container {
+                    flex-direction: column;
+
+                    .reason-box {
+
+                        img {
+                            width: 150px;
+                            height: auto;
+                        }
+
+                        h3 {
+                            margin: 22px 0 0 0;
+
+                            br {
+                                display: none;
+                            }
+                        }
+
+                        p {
+                            margin: 10px 0 0 0;
+                        }
+                    }
+
+                    .reason-box-one {
+                        width: 100%;
+                        margin: 72px 0 0 0;
+
+                        img {
+                            width: 268px;
+                        }
+                    }
+
+                    .reason-box-two {
+                        width: 100%;
+                        margin: 72px 0 0 0;
+
+                        img {
+                            width: 245px;
+                        }
+                    }
+
+                    .reason-box-three {
+                        width: 100%;
+                        margin: 72px 0 0 0;
+
+                        img {
+                            width: 210px;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .fees-section {
+        .inner-container {
+
+            h2 {
+                width: 100%;
+                font-size: 38px;
+                line-height: 46px;
+            }
+
+            .main-desc-para {
+                width: 100%;
+                margin: 10px auto 0 auto;
+            }
+
+            .fees-container {
+                width: 240px;
+                margin: 30px auto 0 auto;
+
+                .fee-icon {
+                    width: 70px;
+                }
+
+                .month-fee-title {
+                    margin: 20px 0 0 0;
+                    font-size: 22px;
+                    line-height: 24px;
+                }
+
+                .partition-line {
+                    width: 124px;
+                    margin: 20px 0 0 0;
+                }
+
+                .flex-row {
+
+                    .text {
+                        font-size: 15px;
+                        line-height: 13px;
+                    }
+
+                    .amount {
+                        font-size: 16px;
+                        line-height: 13px;
+                        font-weight: 600;
+                        color: #0E0D0D;
+                    }
+                }
+
+                .boxed-row {
+                    padding: 7px 7px;
+
+                    p {
+                        font-size: 12px;
+                        line-height: 16px;
+                        text-align: center;
+
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+
+                .row-one {
+                    margin: 40px 0 0 0;
+                }
+
+                .row-two {
+                    margin: 25px 0 0 0;
+                }
+
+                .row-three {
+                    margin: 25px 0 0 0;
+                }
+
+                .row-four {
+                    margin: 25px 0 30px 0;
+                }
+
+            }
+
+            .scnd-desc-para {
+                width: 190px;
+                margin: 20px auto 0 auto;
+            }
+
+            .cta-box {
+                margin: 30px 0 0 0;
+            }
+        }
+    }
+
+    .faq-section {
+        .inner-container {
+            padding: 0;
+
+            .section-partition-horizontal {
+                width: 85px;
+                margin: 0 auto 75px auto;
+            }
+
+        }
+    }
+
+}

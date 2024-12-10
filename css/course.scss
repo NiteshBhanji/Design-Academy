@@ -1,0 +1,278 @@
+@import "default";
+
+
+
+.select-section {
+    .inner-container {
+
+        .tilted-heading-text {
+            width: 221px;
+            margin: 0 0 0 5px;
+        }
+
+        .course-container {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .course-box {
+                max-width: 100%;
+                text-align: center;
+
+                .option-text {
+                    height: 45px;
+                }
+
+                .course-content-wrapper {
+                    border: 1px solid #6C0CAD66;
+                    border-radius: 5px;
+                    margin: 5px 0 0 0;
+                    backdrop-filter: blur(70px);
+                    background: rgb(255 255 255 / 28%);
+                    box-shadow: 0px;
+                    transition: box-shadow 0.4s ease-in-out;
+
+                    .main-title {
+                        width: max-content;
+                        max-width: 100%;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+
+                    .main-title::after {
+                        content: 'Program';
+                        display: block;
+                        width: 100%;
+                        max-width: 100%;
+                        font-family: $NeueHD-MDV;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 21px;
+                        text-align: right;
+                        margin: 0 0 0 -20px;
+                    }
+
+                    .img-box {
+                        height: 220px;
+                        margin: 53px 0 0 0;
+                    }
+
+                    p {
+                        width: 341px;
+                        margin: 65px auto 0 auto;
+                    }
+
+                    .cta-box {
+                        width: 100%;
+                        text-align: center;
+                        margin: 30px 0 0 0;
+                    }
+                }
+
+                .course-content-wrapper:hover {
+                    //box-shadow: 4px 4px 20px rgba(230, 193, 255, 0.25), -4px -4px 20px rgba(230, 193, 255, 0.3);
+                    box-shadow: -4px -4px 20px rgba(139, 137, 137, 0.25), 4px 4px 20px rgba(139, 137, 137, 0.25);
+                }
+            }
+
+            .root-course-box {
+                width: 455px;
+
+                .course-content-wrapper {
+                    padding: 40px 57px 56px 57px;
+
+                    img {
+                        width: 182px;
+                    }
+                }
+            }
+
+            .mclass-course-box {
+                width: 475px;
+
+                .course-content-wrapper {
+                    padding: 40px 67px 56px 67px;
+
+                    img {
+                        width: 241px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+
+/*Tablet CSS starts here*/
+@media only screen and (max-width:1200px) {
+
+    .select-section {
+        .inner-container {
+
+            .tilted-heading-text {
+                width: 124px;
+                margin: 0;
+            }
+
+            .course-container {
+
+                .course-box {
+
+                    .option-text {
+                        height: 35px;
+                    }
+
+                    .course-content-wrapper {
+                        margin: 10px 0 0 0;
+
+                        .main-title {
+                            margin: 0 auto;
+                        }
+
+                        .main-title::after {
+                            font-size: 12px;
+                            line-height: 18px;
+                            margin: -6px 0 0 -20px;
+                        }
+
+                        .img-box {
+                            height: 220px;
+                            margin: 20px 0 0 0;
+                        }
+
+                        p {
+                            width: 232px;
+                            margin: 30px auto 0 auto;
+                        }
+
+                        .cta-box {
+                            width: 100%;
+                            text-align: center;
+                            margin: 30px 0 0 0;
+                        }
+                    }
+                }
+
+                .root-course-box {
+                    width: 295px;
+
+                    .course-content-wrapper {
+                        padding: 30px;
+
+                        img {
+                            width: 182px;
+                        }
+                    }
+                }
+
+                .mclass-course-box {
+                    width: 307px;
+
+                    .course-content-wrapper {
+                        padding: 30px 38px 30px 38px;
+
+                        img {
+                            width: 241px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+
+
+/*Mobile CSS starts here*/
+@media only screen and (max-width:768px) {
+
+    .select-section {
+        .inner-container {
+
+            .tilted-heading-text {
+                width: 113px;
+                margin: 0;
+            }
+
+            .course-container {
+                flex-direction: column;
+                align-items: center;
+
+                .course-box {
+
+                    .option-text {
+                        height: 32px;
+                    }
+
+                    .course-content-wrapper {
+                        margin: 12px 0 0 0;
+
+                        .main-title {
+                            margin: 0 auto;
+                        }
+
+                        .main-title::after {
+                            font-size: 10px;
+                            line-height: 15px;
+                            margin: -6px 0 0 -20px;
+                        }
+
+                        .img-box {
+                            height: unset;
+                            margin: 10px 0 0 0;
+                        }
+
+                        p {
+                            width: 206px;
+                            margin: 20px auto 0 auto;
+                        }
+
+                        .cta-box {
+                            width: 100%;
+                            text-align: center;
+                            margin: 20px 0 0 0;
+                        }
+                    }
+                }
+
+                .root-course-box {
+                    width: 236px;
+
+                    .course-content-wrapper {
+                        padding: 30px 15px;
+
+                        img {
+                            width: 115px;
+                        }
+                    }
+                }
+
+                .mclass-course-box {
+                    width: 236px;
+                    margin: 50px 0 0 0;
+
+                    .course-content-wrapper {
+                        padding: 30px 19px 30px 19px;
+
+                        img {
+                            width: 154px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}

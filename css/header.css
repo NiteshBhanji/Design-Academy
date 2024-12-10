@@ -1,0 +1,1215 @@
+/*Fonts Collection*/
+@font-face {
+  font-family: "NeueHaasDisplay-LT";
+  src: url("../assets/font/NeueHaasDisplayLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NeueHaasDisplay-MD";
+  src: url("../assets/font/NeueHaasDisplayMediu.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NeueHaasDisplay-RMN";
+  src: url("../assets/font/NeueHaasDisplayRoman.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Canela-LT";
+  src: url("../assets/font/Canela-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("../assets/font/TWKLausanne-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Wilderness-REG";
+  src: url("../assets/font/WildernessTypeface-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Wilderness-REG";
+  src: url("../assets/font/WildernessTypeface-Regular.ttf") format("truetype");
+}
+/*Font Variables*/
+/*Theme Color*/
+/*Default CSS according to Design System*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+section {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Default Heading */
+h1 {
+  font-family: "Canela-LT";
+  font-size: 68px;
+  font-weight: 300;
+  line-height: 88px;
+}
+
+h2 {
+  font-family: "Canela-LT";
+  font-size: 51px;
+  font-weight: 300;
+  line-height: 66px;
+}
+
+h3 {
+  font-family: "Canela-LT";
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: "Canela-LT";
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+h6 {
+  font-family: "TWKLausanne";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+p {
+  font-family: "NeueHaasDisplay-RMN";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 0 0 0 34px;
+}
+ul li {
+  font-family: "NeueHaasDisplay-RMN";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+ol {
+  margin: 0 0 0 18px;
+}
+ol li {
+  font-family: "NeueHaasDisplay-RMN";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  padding: 0 0 0 6px;
+}
+
+.simple-underline {
+  border-bottom: 1px solid #6c0cad;
+}
+
+/*Default CTAs*/
+.filled-cta {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: "NeueHaasDisplay-MD";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ffffff !important;
+  background-color: #6c0cad;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.filled-cta:hover {
+  animation-name: wobble-vertical;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes wobble-vertical {
+  /*0% { transform: scale3d(0.96,0.96,1); }
+  20% { transform: scale3d(1.1,1.1,1); }
+  40% { transform: scale3d(0.98,0.98,1); }
+  60% { transform: scale3d(1.05,1.05,1); }
+  80% { transform: scale3d(1.01,1.01,1); }
+  100% { transform: scale3d(1,1,1); }
+
+  0% { transform: scale3d(0.96,1,1); }
+  20% { transform: scale3d(1.1,1,1); }
+  40% { transform: scale3d(0.98,1,1); }
+  60% { transform: scale3d(1.05,1,1); }
+  80% { transform: scale3d(1.01,1,1); }
+  100% { transform: scale3d(1,1,1); }*/
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  20% {
+    transform: scale3d(1.02, 1, 1);
+  }
+  40% {
+    transform: scale3d(1.01, 1, 1);
+  }
+  60% {
+    transform: scale3d(1.02, 1, 1);
+  }
+  80% {
+    transform: scale3d(1.03, 1, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+/*Animation CTAs*/
+.filled-cta::before,
+.filled-cta::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 100%;
+  z-index: -1;
+  border-radius: 30px;
+  transition: transform 0.7s;
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.filled-cta::before {
+  background: #B974E7;
+}
+
+.filled-cta::after {
+  background: #9742D0;
+}
+
+.filled-cta:hover::before,
+.filled-cta:hover::after {
+  transform: translate3d(100%, 0, 0);
+}
+
+.filled-cta:hover::after {
+  transition-delay: 0.175s;
+}
+
+.wh-filled-cta {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: "NeueHaasDisplay-MD";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #6c0cad !important;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+}
+
+.hollow-cta {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: "NeueHaasDisplay-MD";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #322F34 !important;
+  background-color: transparent;
+  border: 1px solid #322F34;
+  border-radius: 30px;
+}
+
+/*Section(container) BG color*/
+.white-bg {
+  background-color: transparent;
+}
+.white-bg h1 {
+  color: #1C1A1D;
+}
+.white-bg h2,
+.white-bg h3,
+.white-bg h4 {
+  color: #232124;
+}
+.white-bg h6 {
+  color: #323133;
+}
+.white-bg p,
+.white-bg ul li {
+  color: #2F2D30;
+}
+
+.purp-bg {
+  background-color: transparent;
+}
+.purp-bg h1 {
+  color: #1C1A1D;
+}
+.purp-bg h2,
+.purp-bg h3,
+.purp-bg h4 {
+  color: #232124;
+}
+.purp-bg h6 {
+  color: #323133;
+}
+.purp-bg p,
+.purp-bg ul li {
+  color: #2F2D30;
+}
+
+/*Default Width for Inner Container of Section*/
+.inner-container {
+  width: 950px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 150px 0 0 0;
+}
+
+.tilted-heading-text {
+  transform: rotate(-5.63deg);
+}
+
+/*Default FAQ Section CSS*/
+.faq-section .inner-container .tilted-heading-text {
+  width: 254px;
+  margin: 0 0 0 238px;
+}
+.faq-section .inner-container h2 {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.faq-section .inner-container h2 span.vector-underline {
+  display: inline-block;
+  width: -moz-min-content;
+  width: min-content;
+  max-width: 100%;
+}
+.faq-section .inner-container p {
+  width: 512px;
+  text-align: center;
+  margin: 15px auto 0 auto;
+}
+.faq-section .inner-container .faq-container {
+  width: 100%;
+  margin: 55px 0 0 0;
+}
+.faq-section .inner-container .faq-container .inner-faq-container {
+  width: 634px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper {
+  padding: 0 40px;
+  border: 1px solid #C6AADA;
+  border-radius: 12px;
+  margin: 15px 0;
+  -webkit-backdrop-filter: blur(70px);
+          backdrop-filter: blur(70px);
+  background: rgba(255, 255, 255, 0.62);
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .question-box {
+  padding: 15px 0;
+  cursor: pointer;
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .question-box p {
+  width: 100%;
+  max-width: 100%;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .question-box p::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url("../assets/images/icons/faq-plus.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  margin: 0 0px 0 30px;
+  padding: 0 6px;
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .answer-box {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper.active {
+  border-radius: 12px;
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper.active .question-box {
+  padding: 15px 0;
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper.active .question-box p::after {
+  background: url("../assets/images/icons/faq-minus.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper.active .answer-box {
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: visible;
+  padding: 10px 0 25px 0;
+  border-top: 1px solid #C6AADA;
+  transition: height 0.4s ease-in-out;
+}
+.faq-section .inner-container .faq-container .inner-faq-container .question-wrapper.active .answer-box p {
+  width: unset;
+  margin: 15px 0 0 0;
+  text-align: left;
+}
+
+/*background rotating blob*/
+.blob {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(../assets/images/blob-bg-img-006.png);
+  background-size: 45%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: rotate 16s linear infinite;
+  z-index: -6;
+  opacity: 1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*glass background surface*/
+.glass-surface {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -5;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+/*Floating Whatsapp Button starts here*/
+.whatsapp-float {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #FFFFFF;
+  color: #6C0CAD !important;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 38px;
+  box-shadow: -4px -4px 20px rgba(139, 137, 137, 0.25), 4px 4px 20px rgba(139, 137, 137, 0.25);
+  transition: box-shadow 0.6s ease-in-out;
+  z-index: 100;
+}
+.whatsapp-float .my-float {
+  margin-top: 16px;
+}
+
+.whatsapp-float:hover {
+  box-shadow: 0 0 0 rgba(139, 137, 137, 0.25), 0 0 0 rgba(139, 137, 137, 0.25);
+}
+
+.whatsapp-float:before {
+  content: "";
+  background: linear-gradient(45deg, #6C0CAD, #9742D0, #B974E7, #6C0CAD, #9742D0, #B974E7);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+.whatsapp-float:active {
+  color: #000;
+}
+
+.whatsapp-float:active:after {
+  background: rgb(255, 255, 255);
+}
+
+.whatsapp-float:hover:before {
+  opacity: 0.5;
+}
+
+.whatsapp-float:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/*Tablet CSS starts here*/
+@media only screen and (max-width: 1200px) {
+  /*Default Heading - Tablet*/
+  h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  h4 {
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 300;
+  }
+  h6 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  ul {
+    margin: 0 0 0 25px;
+  }
+  ul li {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  /*Default CTAs -Tablet*/
+  .filled-cta {
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 19 px;
+  }
+  .wh-filled-cta {
+    padding: 10px 18px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .hollow-cta {
+    padding: 10px 18px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  /*Default Width for Inner Container of Section - Tablet*/
+  .inner-container {
+    width: 620px;
+    padding: 80px 0 0 0;
+  }
+  /*Default FAQ Section CSS - Tablet*/
+  .faq-section .inner-container .tilted-heading-text {
+    width: 142px;
+    margin: 0 0 0 191px;
+  }
+  .faq-section .inner-container h2 {
+    width: 76px;
+  }
+  .faq-section .inner-container h2 span.vector-underline::after {
+    width: 130%;
+    margin: 0 0 0 -18%;
+  }
+  .faq-section .inner-container p {
+    width: 300px;
+    margin: 15px auto 0 auto;
+  }
+  .faq-section .inner-container .faq-container {
+    margin: 40px 0 0 0;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container {
+    width: 426px;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper {
+    padding: 0 20px;
+    margin: 15px 0;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .question-box {
+    padding: 15px 0;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .question-box p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .question-box p::after {
+    width: 24px;
+    height: 24px;
+    margin: 0 0px 0 20px;
+    padding: 0 6px;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .answer-box p {
+    margin: 15px 0 0 0;
+    text-align: left;
+  }
+}
+/*Mobile CSS starts here*/
+@media only screen and (max-width: 768px) {
+  /*Default Heading - Mobile*/
+  h1 {
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 33px;
+  }
+  h6 {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  ul {
+    margin: 0 0 0 25px;
+  }
+  ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /*Default CTAs - Mobile*/
+  .filled-cta {
+    padding: 14px 25px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 100;
+  }
+  .wh-filled-cta {
+    padding: 11px 25px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .hollow-cta {
+    padding: 11px 25px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  /*Default Width for Inner Container of Section - Mobile*/
+  .inner-container {
+    width: 280px;
+    padding: 0;
+  }
+  .section-divider {
+    display: block;
+    width: 85px;
+    margin: 64px auto;
+    opacity: 0.6;
+  }
+  .tilted-heading-text {
+    display: none;
+  }
+  .vector-underline::after {
+    display: none;
+  }
+  /*Default FAQ Section CSS - Mobile*/
+  .faq-section .inner-container .tilted-heading-text {
+    width: 130px;
+    margin: 0 0 0 50px;
+  }
+  .faq-section .inner-container h2 {
+    width: 76px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .faq-section .inner-container h2 span.vector-underline::after {
+    display: none;
+    width: 130%;
+    margin: 0 0 0 -18%;
+  }
+  .faq-section .inner-container p {
+    width: 256px;
+    margin: 10px auto 0 auto;
+  }
+  .faq-section .inner-container .faq-container {
+    margin: 35px 0 0 0;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container {
+    width: 100%;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper {
+    padding: 0 18px;
+    margin: 15px 0;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .question-box {
+    padding: 11px 0;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .question-box p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .question-box p::after {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0 4px;
+  }
+  .faq-section .inner-container .faq-container .inner-faq-container .question-wrapper .answer-box p {
+    margin: 15px 0 0 0;
+    text-align: left;
+  }
+  .popup-box {
+    position: fixed;
+    width: 90%;
+    height: auto;
+    background: #FFFFFF;
+    z-index: 101;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: none;
+    animation: fadeInPopbox 1s;
+    opacity: 1;
+  }
+  .popup-box .inner-popup-box {
+    text-align: center;
+  }
+  .popup-box .inner-popup-box .close-btn {
+    width: 16px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .popup-box .inner-popup-box h3 {
+    font-size: 28px;
+    line-height: 38px;
+    margin: 30px 0 15px 0;
+    color: #2F2D30;
+  }
+  .popup-box .inner-popup-box p {
+    background: #FCF8FF;
+    color: #2F2D30;
+  }
+  .popup-box .inner-popup-box .instruct {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .popup-box .inner-popup-box .form-wrapper {
+    max-width: 100%;
+    margin: 30px 0 0 0;
+    padding: 0 20px;
+  }
+  .popup-box .inner-popup-box .form-wrapper .info {
+    margin: 20px 0 0 0;
+    color: #2F2D30;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .popup-box .inner-popup-box .form-wrapper p {
+    background: transparent;
+    color: #2F2D30;
+  }
+  .popup-box .inner-popup-box .form-wrapper input {
+    width: 96%;
+    margin: 10px 0 0 0;
+    border: 1px solid rgba(108, 12, 173, 0.4);
+    padding: 10px 0 10px 10px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 9px;
+  }
+  .popup-box .inner-popup-box .form-wrapper .submit-box {
+    margin: 20px 0 0 0;
+  }
+  .popup-box .inner-popup-box .form-wrapper .submit-box .submit-btn {
+    width: 100%;
+    background: #6C0CAD;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 50px;
+  }
+  .popup-box .inner-popup-box .form-wrapper .note {
+    width: 90%;
+    margin: 25px auto 20px auto;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+  .blob {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: unset;
+    background: url(../assets/images/blob-bg-img-006.png);
+    background-size: 73%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: rotate 16s linear infinite;
+    z-index: -6;
+    opacity: 1;
+  }
+  .glass-surface {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.09);
+  }
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #FFFFFF;
+    color: #6C0CAD !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: -4px -4px 20px rgba(139, 137, 137, 0.25), 4px 4px 20px rgba(139, 137, 137, 0.25);
+    z-index: 100;
+  }
+  .whatsapp-float .my-float {
+    margin-top: 16px;
+  }
+}
+/*Responsive Hide Elements*/
+@media only screen and (min-width: 1201px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+  .hide-tablet {
+    display: none !important;
+  }
+  .vector-underline::after {
+    display: none !important;
+  }
+  .tilted-heading-text {
+    display: none;
+  }
+  h6 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  .hide-mobile br {
+    display: none !important;
+  }
+}
+.header-section {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.header-section .top-bar {
+  font-family: "NeueHaasDisplay-RMN";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  margin: 0 0 23px 0;
+  text-align: center;
+  -webkit-backdrop-filter: blur(160px);
+          backdrop-filter: blur(160px);
+  background: rgba(255, 255, 255, 0.09);
+}
+.header-section .top-bar .colored-text {
+  color: #6C0CAD;
+  font-weight: 600;
+}
+.header-section .inner-container {
+  padding: 0;
+}
+.header-section .inner-container .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-section .inner-container .flex-box .header-logo-box {
+  width: 161px;
+}
+.header-section .inner-container .flex-box .header-logo-box h5 {
+  font-family: "NeueHaasDisplay-RMN";
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #000000;
+}
+.header-section .inner-container .flex-box .header-logo-box h5 span {
+  font-size: 22px;
+  line-height: 26px;
+  color: #6c0cad;
+}
+.header-section .inner-container .flex-box .header-logo-box h5 .thin-letter {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 100;
+  color: #272727;
+}
+.header-section .inner-container .flex-box .header-nav-box {
+  width: 400px;
+  max-width: 100%;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 4px 4px 44px rgba(0, 0, 0, 0.1);
+}
+.header-section .inner-container .flex-box .header-nav-box ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.header-section .inner-container .flex-box .header-nav-box ul li a {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #000000;
+  opacity: 0.3;
+  transition: color 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.header-section .inner-container .flex-box .header-nav-box ul li.active a {
+  color: #6c0cad;
+  opacity: 1;
+}
+.header-section .inner-container .flex-box .header-nav-box ul li:hover a {
+  color: #6c0cad;
+  opacity: 1;
+}
+.header-section .inner-container .flex-box .header-nav-box ul .cut-through-text span {
+  color: #000000;
+  opacity: 0.3;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+}
+.header-section .inner-container .flex-box .header-nav-box ul .cut-through-text img {
+  position: absolute;
+  width: 42px;
+  margin: 4px 0 0 -38px;
+  opacity: 1;
+  transform: rotate(26.4deg);
+}
+.header-section .inner-container .flex-box .header-nav-box ul .cut-through-text:hover span {
+  color: #000000;
+  opacity: 0.3;
+}
+.header-section .inner-container .flex-box .header-nav-box ul .cut-through-text::after {
+  content: "Not in MVP";
+  display: block;
+  position: absolute;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  margin: 0 0 0 -6px;
+  color: #6c0cad;
+  opacity: 1;
+  transform: rotate(-6.52deg);
+}
+.header-section .inner-container .flex-box .header-cta-box {
+  width: 158px;
+}
+.header-section .inner-container .flex-box .header-cta-box img {
+  height: 28px;
+  vertical-align: middle;
+  margin: -6px 0 0 6px;
+}
+
+/*Header for Tab CSS starts here*/
+@media only screen and (max-width: 1200px) {
+  .header-section .top-bar {
+    font-family: "NeueHaasDisplay-RMN";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    padding: 6px 0;
+    margin: 0 0 23px 0;
+    text-align: center;
+    -webkit-backdrop-filter: blur(160px);
+            backdrop-filter: blur(160px);
+    background: rgba(255, 255, 255, 0.09);
+  }
+  .header-section .top-bar .colored-text {
+    color: #6C0CAD;
+    font-weight: 600;
+  }
+  .header-section .inner-container .flex-box .header-logo-box {
+    width: 108px;
+  }
+  .header-section .inner-container .flex-box .header-logo-box h5 {
+    font-family: "NeueHaasDisplay-MD";
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header-section .inner-container .flex-box .header-logo-box h5 span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .header-section .inner-container .flex-box .header-logo-box h5 .thin-letter {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header-section .inner-container .flex-box .header-nav-box {
+    width: 309px;
+    padding: 11px 25px;
+  }
+  .header-section .inner-container .flex-box .header-nav-box ul li a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .header-section .inner-container .flex-box .header-nav-box ul .cut-through-text img {
+    position: absolute;
+    width: 28px;
+    margin: 4px 0 0 -32px;
+  }
+  .header-section .inner-container .flex-box .header-nav-box ul .cut-through-text::after {
+    font-size: 10px;
+    line-height: 12px;
+    margin: -2px 0 0 0;
+  }
+  .header-section .inner-container .flex-box .header-cta-box {
+    width: 82px;
+  }
+  .header-section .inner-container .flex-box .header-cta-box a {
+    font-family: "NeueHaasDisplay-LT";
+    font-size: 12px;
+    line-height: 14px;
+    padding: 11px 15px 11px 15px;
+  }
+}
+/*Header for Mobile CSS starts here*/
+@media only screen and (max-width: 768px) {
+  .header-section .top-bar {
+    font-family: "NeueHaasDisplay-RMN";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    padding: 6px 24px;
+    margin: 0 0 23px 0;
+    text-align: center;
+    -webkit-backdrop-filter: blur(160px);
+            backdrop-filter: blur(160px);
+    background: rgba(255, 255, 255, 0.09);
+  }
+  .header-section .top-bar .colored-text {
+    color: #6C0CAD;
+    font-weight: 600;
+  }
+  .header-section .inner-container .flex-box .header-logo-box {
+    width: 130px;
+  }
+  .header-section .inner-container .flex-box .header-logo-box h5 {
+    font-family: "NeueHaasDisplay-MD";
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 100;
+  }
+  .header-section .inner-container .flex-box .header-logo-box h5 span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .header-section .inner-container .flex-box .header-logo-box h5 .thin-letter {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .header-section .inner-container .flex-box .header-nav-box {
+    width: 309px;
+    padding: 11px 25px;
+  }
+  .header-section .inner-container .flex-box .header-nav-box ul li a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .header-section .inner-container .flex-box .header-nav-box ul .cut-through-text img {
+    position: absolute;
+    width: 28px;
+    margin: 4px 0 0 -32px;
+  }
+  .header-section .inner-container .flex-box .header-nav-box ul .cut-through-text::after {
+    font-size: 10px;
+    line-height: 12px;
+    margin: -2px 0 0 0;
+  }
+  .header-section .inner-container .flex-box .header-cta-box {
+    width: 82px;
+    margin: 0 0 0 20px;
+  }
+  .header-section .inner-container .flex-box .header-cta-box a {
+    font-family: "NeueHaasDisplay-LT";
+    font-size: 12px;
+    line-height: 14px;
+    padding: 11px 15px 11px 15px;
+  }
+  .header-section .inner-container .flex-box .menuBar-Container {
+    margin: 0 0 0 20px;
+  }
+  .header-section .inner-container .flex-box .menuBar-Container .bars {
+    width: 28px;
+    height: 2px;
+    background: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 2px);
+}
+
+.change .bar2 {
+  display: none;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-4px, 0px);
+}
+
+.hamMenu-Box {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  z-index: 99;
+}
+.hamMenu-Box .inner-hamMenu-Box {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  opacity: 0;
+}
+.hamMenu-Box .inner-hamMenu-Box .hamMenu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hamMenu-Box .inner-hamMenu-Box .hamMenu ul {
+  text-align: center;
+  margin: 0;
+  list-style-type: none;
+}
+.hamMenu-Box .inner-hamMenu-Box .hamMenu ul li {
+  border-bottom: none;
+  letter-spacing: -3px;
+  margin: 20px 0 0 0;
+}
+.hamMenu-Box .inner-hamMenu-Box .hamMenu ul li a {
+  color: #6C0CAD;
+  font-size: 60px;
+  line-height: 60px;
+}
+.hamMenu-Box .inner-hamMenu-Box .hamMenu ul li:before {
+  display: none;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=header.css.map */

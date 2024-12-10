@@ -1,0 +1,756 @@
+@import "default";
+
+.header-section {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    .inner-container {
+        padding: 42px 0;
+
+        .flex-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header-logo-box {
+                width: 161px;
+
+                h5 {
+                    font-family: $NeueHD-RMNV;
+                    font-size: 24px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    color: #000000;
+
+                    span {
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: $primaryColor;
+                    }
+
+                    .thin-letter {
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: 100;
+                        color: #272727;
+                    }
+                }
+            }
+
+            .back-home-btn {
+                p {
+                    font-weight: 600;
+                    color: #272727;
+                }
+
+                p::before {
+                    content: '';
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    background: url(../assets/images/icons/arrow-left-con.png);
+                    background-size: contain;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                    float: left;
+                    margin: 6px 11px 0 0;
+                }
+
+                p:hover {
+                    color: #6C0CAD;
+                }
+            }
+        }
+    }
+}
+
+.hero-section {
+    .inner-container {
+
+        .flex-wrapper {
+            display: flex;
+            align-items: center;
+
+            .form-box {
+                width: 469px;
+
+                .inner-form-box {
+                    padding: 30px 0;
+                    text-align: center;
+                    box-shadow: -14px -14px 45px rgba(0, 0, 0, 0.06), 14px 14px 45px rgba(0, 0, 0, 0.06);
+
+                    h3 {
+                        margin: 0 0 20px 0;
+                        color: #2F2D30;
+                    }
+
+                    p {
+                        background: #FCF8FF;
+                        color: #2F2D30;
+                    }
+
+                    .instruct {
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+
+                    .form-wrapper {
+                        max-width: 100%;
+                        margin: 20px 0 0 0;
+                        text-align: left;
+                        padding: 0 40px;
+                        position: relative;
+
+                        #enrollForm {
+                            position: relative;
+                            z-index: 1;
+
+                            .name-wrapper {
+                                display: flex;
+                                justify-content: space-between;
+
+                                .name-box {
+                                    width: 48%;
+                                }
+
+                            }
+                        }
+
+                        .info {
+                            margin: 20px 0 0 0;
+                            color: #2F2D30;
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+
+                        p {
+                            background: transparent;
+                            color: #2F2D30;
+
+                            .required-color {
+                                color: #DA3333;
+                            }
+                        }
+
+                        input,
+                        select {
+                            width: 96%;
+                            margin: 10px 0 0 0;
+                            border: 1px solid #6C0CAD66;
+                            padding: 15px 0 15px 15px;
+                            font-size: 16px;
+                            line-height: 24px;
+                            border-radius: 9px;
+                        }
+
+                        select {
+                            width: 100%;
+                            // color: #999999;
+                        }
+
+                        select:invalid {
+                            color: #999999;
+                        }
+
+                        input:focus-visible,
+                        select:focus-visible {
+                            outline: none;
+                        }
+
+                        input::placeholder {
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #999999;
+                        }
+
+                        .g-recaptcha>div {
+                            margin: 20px auto 0;
+                        }
+
+                        .submit-box {
+                            margin: 20px 0 0 0;
+
+                            .submit-btn {
+                                width: 100%;
+                                background: #6C0CAD;
+                                padding: 15px;
+                                color: #FFFFFF;
+                                border-radius: 50px;
+                                margin: 0;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .note {
+                            margin: 25px auto 0 auto;
+                            font-size: 16px;
+                            line-height: 25px;
+                            text-align: center;
+                        }
+
+                        #loading {
+                            display: none;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            right: 0;
+                            z-index: 2;
+                            background-color: #ffffffe0;
+
+                            .spinner-wrapper {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                pointer-events: none;
+
+                                .spinner {
+                                    width: 40px;
+                                    height: 40px;
+                                    border: 5px solid #f3f3f3;
+                                    border-radius: 50%;
+                                    border-top: 5px solid #6C0CAD;
+                                    animation: spin 1s linear infinite;
+                                    top: 25%;
+                                    position: relative;
+                                }
+                            }
+                        }
+
+                        @keyframes spin {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+
+                        .result-message {
+                            display: none;
+                            margin: 20px auto;
+                            text-align: center;
+                            color: #df1d1d;
+                        }
+
+                        .success-message {
+                            color: #2F2D30;
+                        }
+                    }
+
+                }
+            }
+
+            .form-box::before {
+                content: '';
+                display: block;
+                width: 132px;
+                height: 112px;
+                background: url(../assets/images/icons/con-hands.png);
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                float: right;
+                margin: -106px 0 0 0;
+
+            }
+
+            .testmonial-box {
+                width: 385px;
+                margin: 0 0 0 96px;
+
+                .inner-testmonial-box {
+
+                    .quote-box {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+
+                    .quote-box::before {
+                        content: '';
+                        display: block;
+                        width: 25px;
+                        height: 25px;
+                        background: url(../assets/images/icons/quote-left.png);
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        margin: 0 0 14px 0;
+                    }
+
+                    .quote-box::after {
+                        content: '';
+                        display: block;
+                        width: 25px;
+                        height: 25px;
+                        background: url(../assets/images/icons/quote-right.png);
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        margin: 30px 30px 0 0;
+                        float: right;
+                    }
+
+                    .user-box {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 12px 0 0 0;
+
+                        .user-profile {
+                            img {
+                                width: 119px;
+                            }
+                        }
+
+                        .user-data {
+                            margin: 0 0 0 12px;
+
+                            .user-name {
+                                font-family: $Wild-REGV;
+                                font-size: 62px;
+                                line-height: 86.8px;
+                                color: #6C0CAD;
+                                transform: rotate(-6.24deg);
+                            }
+
+                            .user-company {
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+                        }
+
+                        .user-data::after {
+                            content: '';
+                            display: inline-block;
+                            width: 101px;
+                            height: 89px;
+                            background: url(../assets/images/icons/rocket-con.png);
+                            background-size: contain;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            float: right;
+                            margin: -89px -115px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*Header for Tab CSS starts here*/
+@media only screen and (max-width:1200px) {
+
+    .header-section {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+
+        .inner-container {
+            padding: 42px 0;
+
+            .flex-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .header-logo-box {
+                    width: 161px;
+
+                    h5 {
+                        font-family: $NeueHD-RMNV;
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: 600;
+                        color: #000000;
+
+                        span {
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: $primaryColor;
+                        }
+
+                        .thin-letter {
+                            font-size: 24px;
+                            line-height: 28px;
+                            font-weight: 100;
+                            color: #272727;
+                        }
+                    }
+                }
+
+                .back-home-btn {
+                    p {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+
+                    p::before {
+                        content: '';
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        background: url(../assets/images/icons/arrow-left-con.png);
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        vertical-align: middle;
+                        float: left;
+                        margin: 6px 11px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-section {
+        .inner-container {
+            padding: 150px 0;
+
+            .flex-wrapper {
+                flex-direction: column;
+
+                .form-box {
+                    width: 100%;
+                }
+
+                .form-box::before {
+                    content: '';
+                    display: block;
+                    width: 132px;
+                    height: 112px;
+                    background: url(../assets/images/icons/con-hands.png);
+                    background-size: contain;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    float: unset;
+                    margin: -90px auto -6px auto;
+
+                }
+
+                .testmonial-box {
+                    width: 100%;
+                    margin: 91px 0 0 0;
+
+                    .inner-testmonial-box {
+
+                        .quote-box {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+
+                        .quote-box::before {
+                            content: '';
+                            display: block;
+                            width: 25px;
+                            height: 25px;
+                            background: url(../assets/images/icons/quote-left.png);
+                            background-size: contain;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            margin: 0 0 14px 0;
+                        }
+
+                        .quote-box::after {
+                            content: '';
+                            display: block;
+                            width: 25px;
+                            height: 25px;
+                            background: url(../assets/images/icons/quote-right.png);
+                            background-size: contain;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            margin: 30px 30px 0 0;
+                            float: right;
+                        }
+
+                        .user-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 96px 0 0 -110px;
+
+                            .user-profile {
+                                img {
+                                    width: 119px;
+                                }
+                            }
+
+                            .user-data {
+                                margin: 0 0 0 12px;
+
+                                .user-name {
+                                    font-family: $Wild-REGV;
+                                    font-size: 62px;
+                                    line-height: 86.8px;
+                                    color: #6C0CAD;
+                                    transform: rotate(-6.24deg);
+                                }
+
+                                .user-company {
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                }
+                            }
+
+                            .user-data::after {
+                                content: '';
+                                display: inline-block;
+                                width: 101px;
+                                height: 89px;
+                                background: url(../assets/images/icons/rocket-con.png);
+                                background-size: contain;
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                                float: right;
+                                margin: -89px -115px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*Header for Mobile CSS starts here*/
+@media only screen and (max-width:768px) {
+
+    .header-section {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+
+        .inner-container {
+            width: 90%;
+            padding: 42px 0;
+
+            .flex-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+                .header-logo-box {
+                    width: 130px;
+
+                    h5 {
+                        font-family: $NeueHD-MDV;
+                        font-size: 19px;
+                        line-height: 25px;
+                        font-weight: 100;
+
+                        span {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+
+                        .thin-letter {
+                            font-size: 19px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+
+                .back-home-btn {
+                    p {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    p::before {
+                        content: '';
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        background: url(../assets/images/icons/arrow-left-con.png);
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        vertical-align: middle;
+                        float: left;
+                        margin: 6px 11px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-section {
+        .inner-container {
+            width: 90%;
+            padding: 110px 0;
+
+            .flex-wrapper {
+                flex-direction: column;
+
+                .form-box {
+                    width: 100%;
+
+                    .inner-form-box {
+                        text-align: center;
+
+                        h3 {
+                            font-size: 28px;
+                            line-height: 38px;
+                            margin: 0 0 15px 0;
+                            color: #2F2D30;
+                        }
+
+                        p {
+                            background: #FCF8FF;
+                            color: #2F2D30;
+                        }
+
+                        .instruct {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+
+                        .form-wrapper {
+                            max-width: 100%;
+                            margin: 30px 0 0 0;
+                            padding: 0 20px;
+
+                            .info {
+                                margin: 20px 0 0 0;
+                                color: #2F2D30;
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+
+                            p {
+                                background: transparent;
+                                color: #2F2D30;
+                            }
+
+                            input {
+                                width: 96%;
+                                margin: 10px 0 0 0;
+                                border: 1px solid #6C0CAD66;
+                                padding: 10px 0 10px 10px;
+                                font-size: 16px;
+                                line-height: 20px;
+                                border-radius: 9px;
+                            }
+
+                            input::placeholder {
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: #999999;
+                            }
+
+                            .submit-box {
+                                margin: 20px 0 0 0;
+
+                                .submit-btn {
+                                    width: 100%;
+                                    background: #6C0CAD;
+                                    padding: 10px;
+                                    color: #FFFFFF;
+                                    border-radius: 50px;
+                                }
+                            }
+
+                            .note {
+                                width: 90%;
+                                margin: 25px auto 20px auto;
+                                font-size: 14px;
+                                line-height: 21px;
+                                text-align: center;
+                            }
+                        }
+
+                    }
+                }
+
+                .form-box::before {
+                    content: '';
+                    display: none;
+                }
+
+                .testmonial-box {
+                    width: 100%;
+                    margin: 68px 0 0 0;
+
+                    .inner-testmonial-box {
+
+                        .quote-box {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+
+                        .quote-box::before {
+                            content: '';
+                            display: block;
+                            width: 19px;
+                            height: 17px;
+                            background: url(../assets/images/icons/quote-left.png);
+                            background-size: contain;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            margin: 0 0 14px 0;
+                        }
+
+                        .quote-box::after {
+                            content: '';
+                            display: block;
+                            width: 19px;
+                            height: 17px;
+                            background: url(../assets/images/icons/quote-right.png);
+                            background-size: contain;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            margin: 30px 0 0 0;
+                            float: right;
+                        }
+
+                        .user-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 12px 0 0 0;
+
+                            .user-profile {
+                                img {
+                                    width: 84px;
+                                }
+                            }
+
+                            .user-data {
+                                margin: 0 0 0 12px;
+
+                                .user-name {
+                                    font-size: 54px;
+                                    line-height: 60px;
+                                }
+
+                                .user-company {
+                                    font-size: 16px;
+                                    line-height: 28px;
+                                }
+                            }
+
+                            .user-data::after {
+                                content: '';
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.project-wrapper {
+  width: 1000px;
+  height: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.project-wrapper .project-box {
+  width: 253px;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  transform-origin: center;
+  z-index: 14;
+  visibility: hidden;
+}
+.project-wrapper .project-box .project-img {
+  width: 100%;
+  height: 415px;
+}
+.project-wrapper .project-box .project-title {
+  margin: 20px 0 0 0;
+  display: none;
+}
+.project-wrapper .slick-list {
+  height: 600px;
+}
+.project-wrapper .slick-track {
+  width: 100% !important;
+  height: 600px;
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+.project-wrapper .project-box.slick-current {
+  transform: translate(-50%, 0) rotate(0deg);
+  z-index: 16;
+  visibility: visible;
+  animation: crntFadeIn 2s;
+  opacity: 1;
+}
+.project-wrapper .project-box.slick-current .project-img {
+  background: #91ca0b;
+}
+.project-wrapper .project-box.slick-current .project-title {
+  display: block;
+}
+.project-wrapper .project-box.prevdiv {
+  transform: translate(-60%, 0) rotate(350deg);
+  visibility: visible;
+  z-index: 15;
+  animation: prevFadeIn 1s;
+  opacity: 1;
+}
+.project-wrapper .project-box.prevdiv .project-img {
+  background: #FFC7C2;
+}
+.project-wrapper .project-box.nextdiv {
+  transform: translate(-40%, 0) rotate(11deg);
+  visibility: visible;
+  z-index: 15;
+  animation: nxtFadeIn 1s;
+  opacity: 1;
+}
+.project-wrapper .project-box.nextdiv .project-img {
+  background: #087483;
+}
+
+@keyframes crntFadeIn {
+  0% {
+    filter: blur(3px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+@keyframes prevFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-60%, 0) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-60%, 0) rotate(350deg);
+  }
+}
+@keyframes nxtFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-40%, 0) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-40%, 0) rotate(11deg);
+  }
+}
+.project-wrapper-img .project-box .project-title {
+  display: none;
+}
+
+.project-wrapper-text .project-box .project-img {
+  display: none;
+}/*# sourceMappingURL=slider.css.map */
